@@ -8,9 +8,9 @@ public class College {
         student.setName("Ivan Ivanov");
         student.setGroup(2222);
         student.setCreated(new Date());
-
-        System.out.println("Student name: " + student.getName() + "\n"
-                            + "Group number: " + student.getGroup() + "\n"
+        String ln = System.lineSeparator();
+        System.out.println("Student name: " + student.getName() + ln
+                            + "Group number: " + student.getGroup() + ln
                             + "Admission date: " + student.getCreated());
     }
 }
