@@ -36,6 +36,9 @@ public class PasswordValidator {
             if (!isDigit(pwChar) && !isLetter(pwChar)) {
                 specSymbol = true;
             }
+            if (lower && upper && digit && specSymbol) {
+                break;
+            }
         }
         if (!upper) {
             throw new IllegalArgumentException("Password should contain at least one uppercase letter");
